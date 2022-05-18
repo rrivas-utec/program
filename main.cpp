@@ -3,13 +3,24 @@
 //
 
 #include <iostream>
-#include "library.h"
-#include "SFML/Graphics.hpp"
+#include "./control/include/control.h"
+#include <SFML/Graphics.hpp>
 
 using namespace std;
 
+
+int main() {
+//    utec::run();
+    utec::run2();
+
+}
+
+/*
 int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
+    sf::CircleShape circle(30);
+    circle.setFillColor(sf::Color::Yellow);
+    circle.setPosition(10, 10);
 
     // run the program as long as the window is open
     while (window.isOpen())
@@ -24,13 +35,14 @@ int main() {
         }
 
         // clear the window with black color
-        window.clear(sf::Color::Black);
+        window.clear(sf::Color::Blue);
 
         // draw everything here...
-        // window.draw(...);
+         window.draw(circle);
 
         // end the current frame
         window.display();
     }
     return 0;
 }
+*/

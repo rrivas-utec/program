@@ -3,6 +3,10 @@
 
 #include <string>
 using namespace std;
-void hello(string texto);
+
+namespace utec {
+    void run2();
+    void run();
+}
 
 #endif //INC_2_APPLICATION_LAYER_LIBRARY_H
