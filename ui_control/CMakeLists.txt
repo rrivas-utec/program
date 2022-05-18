@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
-project(control)
+project(ui_control)
 
 set(CMAKE_CXX_STANDARD 17)
 
 # Project files
+include_directories("./include")
 file(GLOB project_files src/*.cpp)
 
 IF(MINGW)
@@ -19,7 +20,7 @@ find_package(SFML COMPONENTS graphics audio REQUIRED)
 
 # Project
 add_library(${PROJECT_NAME} ${project_files})
-target_link_libraries(${PROJECT_NAME} ${CONTROL_LIBRARY} sfml-graphics sfml-audio)
+target_link_libraries(${PROJECT_NAME} ${UI_CONTROL_LIBRARY} sfml-graphics sfml-audio)
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 
 # Listando directorios
